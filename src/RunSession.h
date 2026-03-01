@@ -1,11 +1,11 @@
 #pragma once
+#include "ScoringSystem.h"
+#include <vector>
 
 class RunSession {
-private:
-    int totalScore;
-    int totalRounds;
-
 public:
-    RunSession();
     void start();
+
+private:
+    ScoringSystem scoring; // sistem skor
 };
