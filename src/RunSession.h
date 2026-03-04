@@ -1,11 +1,9 @@
-#pragma once
-#include "ScoringSystem.h"
-#include <vector>
+#ifndef RUN_SESSION_H
+#define RUN_SESSION_H
 
 class RunSession {
 public:
-    void start();
-
-private:
-    ScoringSystem scoring; // sistem skor
+    void start(); // Memulai game
 };
+
+#endif

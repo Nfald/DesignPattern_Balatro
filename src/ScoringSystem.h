@@ -1,15 +1,12 @@
-#pragma once
-#include <vector>
-#include <string>
+#ifndef SCORING_SYSTEM_H
+#define SCORING_SYSTEM_H
 
-// Class untuk menghitung skor kombinasi kartu
+#include <vector>
+
+// Class untuk menghitung skor kombinasi poker
 class ScoringSystem {
 public:
-    // Fungsi utama untuk menghitung skor
-    int calculateScore(const std::vector<int>& hand);
-
-private:
-    // Fungsi helper untuk cek kombinasi
-    bool isPair(const std::vector<int>& hand);
-    bool isThreeOfKind(const std::vector<int>& hand);
+    int calculateScore(const std::vector<int>& ranks);
 };
+
+#endif
